@@ -21,7 +21,7 @@ public class PythagoreanTriplets {
         for(int i = 1; i <= sum/3; i++)
             for(int j = i+1; j <= sum/2; j++) {
                 int k = sum - i - j;
-                if (k*k == (i*i + j*j) && (k+i+j == sum))
+                if (k*k == (i*i + j*j))
                     pythagoreanTriplets.add(new PythagoreanTriplets(i, j, k));
             }
         return pythagoreanTriplets;
